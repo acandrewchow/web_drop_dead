@@ -1,0 +1,31 @@
+<!-- Create an Account page -->
+<div class="header">
+  <h2>Create an Account</h2>
+</div>
+
+<div class="container">
+  <%= form_with model: @user, url: create_new_user_path, local: true do |form| %>
+    <div class="form-group">
+      <%= form.label :username, "Username:" %>
+      <%= form.text_field :username, id: "username", placeholder: "Enter your username", required: true %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :email, "Email:" %>
+      <%= form.email_field :email, id: "email", placeholder: "Enter your email", required: true %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :password, "Password:" %>
+      <%= form.password_field :password, id: "password", placeholder: "Enter your password", required: true %>
+    </div>
+
+    <div class="form-group">
+      <%= form.submit "Create Account", class: "create-account-btn" %>
+    </div>
+  <% end %>
+
+  <div class="login-link">
+    <p>Already have an account? <%= link_to 'Login', root_path %></p>
+  </div>
+</div>

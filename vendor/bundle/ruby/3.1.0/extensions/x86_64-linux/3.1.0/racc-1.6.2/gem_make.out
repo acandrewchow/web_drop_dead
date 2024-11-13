@@ -1,0 +1,23 @@
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+/usr/bin/ruby3.1 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241108-1635685-r0692a.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= clean
+make: Warning: File 'Makefile' has modification time 227 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\=
+make: Warning: File 'Makefile' has modification time 227 s in the future
+compiling cparse.c
+linking shared-object racc/cparse.so
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= install
+make: Warning: File 'Makefile' has modification time 226 s in the future
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20241108-1635685-o46y5n/racc
+make: warning:  Clock skew detected.  Your build may be incomplete.

@@ -1,0 +1,23 @@
+<!-- Game Settings Page -->
+<h1> Welcome to the game of Drop Dead! </h1>
+
+<%= form_with url: play_drop_dead_game_path, method: :post, html: { id: 'drop-dead-game-form' } do %>
+  <div>
+    <%= label_tag :player_count, "Number of Players" %>
+    <%= number_field_tag :player_count, 2, min: 1, required: true %>
+  </div>
+
+  <div>
+    <%= label_tag :sides, "Number of Sides per Die" %>
+    <%= number_field_tag :sides, 6, min: 1, required: true %>
+  </div>
+
+  <div>
+    <%= label_tag :dice_count, "Number of Dice per Player" %>
+    <%= number_field_tag :dice_count, 5, min: 1, required: true %>
+  </div>
+
+  <div>
+    <%= submit_tag "Play Game" %>
+  </div>
+<% end %>

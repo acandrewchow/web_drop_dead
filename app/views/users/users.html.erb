@@ -1,0 +1,7 @@
+<!-- Main Menu -->
+<h1> Welcome to Drop Dead Game </h1>
+<div class="container">
+    <%= button_to 'Play New Game', new_drop_dead_game_path, method: :get, class: 'play-new-game-btn' %>
+    <%= button_to 'View History', new_drop_dead_game_path, method: :get, class: 'view-history-btn' %>
+    <%= button_tag 'Exit', class: 'exit-btn', onclick: "window.location='/'" %>
+</div>

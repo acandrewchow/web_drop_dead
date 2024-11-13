@@ -1,0 +1,21 @@
+<!-- Game Page -->
+<h2>Game Results</h2>
+<% @rounds.each_with_index do |round_result, index| %>
+  <div class="round-results">
+    <h2>Round <%= index + 1 %></h2>
+    <% round_result.each do |result| %>
+      <p>
+        <strong><%= result[:name] %></strong> rolled: <span class="roll-result"><%= result[:dice].join(", ") %></span><br>
+        Score: <span class="score-result"><%= result[:score] %></span> | Dice left: <span class="dice-left"><%= result[:dice_left].join(", ") %></span>
+        <% if result[:status] %> - <%= result[:status] %> <% end %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
+
+<div class="winner">
+  <p><%= @winner.name %> has won the game with a score of <%= @winner.score %>!</p>
+</div>
+
+<%= button_to 'Play Again', play_drop_dead_game_path, method: :post, class: 'play-again-btn' %>
+<%= button_to 'Change Settings', new_drop_dead_game_path, method: :get, class: 'change-settings-btn' %>

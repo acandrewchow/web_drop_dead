@@ -1,0 +1,28 @@
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.20/ext/mri
+/usr/bin/ruby3.1 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241112-2937540-vswce5.rb extconf.rb
+creating Makefile
+
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.20/ext/mri
+make DESTDIR\= clean
+make: Warning: File 'Makefile' has modification time 233 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.20/ext/mri
+make DESTDIR\=
+make: Warning: File 'Makefile' has modification time 233 s in the future
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+wrapper.c:182:60: warning: ‘struct crypt_data’ declared inside parameter list will not be visible outside of this definition or declaration
+  182 | char *crypt_r(const char *key, const char *setting, struct crypt_data *data)
+      |                                                            ^~~~~~~~~~
+x86_64-linux-gnu-gcc  -D__SKIP_GNU -Wdate-time -D_FORTIFY_SOURCE=2    -c -o x86.o x86.S
+linking shared-object bcrypt_ext.so
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /home/undergrad/1/achow04/cis3260/WebDropDead/vendor/bundle/ruby/3.1.0/gems/bcrypt-3.1.20/ext/mri
+make DESTDIR\= install
+make: Warning: File 'Makefile' has modification time 231 s in the future
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20241112-2937540-bxp5et
+make: warning:  Clock skew detected.  Your build may be incomplete.
