@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   # Route to create a new user
   post 'create', to: 'users#create', as: 'create_new_user'
 
+  # Route to retrieve he history
+  get 'history', to: 'history#history'
 end
 
 # rails server -d -p 36051 -b 0.0.0.0

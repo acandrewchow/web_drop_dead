@@ -104,7 +104,7 @@ strong {
   margin: 20px auto;
 }
 
-.play-again-btn, .change-settings-btn {
+.play-again-btn, .change-settings-btn, .go-back-btn {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #007bff;
@@ -115,6 +115,6 @@ strong {
   cursor: pointer;
 }
 
-.play-again-btn:hover, .change-settings-btn:hover {
+.play-again-btn:hover, .change-settings-btn:hover, .go-back-btn:hover {
   background-color: #0056b3;
 }

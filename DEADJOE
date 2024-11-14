@@ -1,0 +1,13 @@
+
+*** These modified files were found in JOE when it aborted on Thu Nov 14 14:03:02 2024
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/home/undergrad/1/achow04/A4/A4/.git/MERGE_MSG
+/home/undergrad/1/achow04/cis3260/WebDropDead/README.md
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
